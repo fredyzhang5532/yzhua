@@ -1,0 +1,14 @@
+{
+	'data':[
+	{
+	'type':'json',
+	'name':'色色',
+	'url':'http://sscj8.com/inc/jsonsapi.php?ac=videolist'
+	},
+	{
+	'type':'json',
+	'name':'色色',
+	'url':'http://sscj8.com/inc/jsonsapi.php?ac=videolist'
+	}
+	]
+}
