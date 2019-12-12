@@ -18,30 +18,6 @@
 			"tag": "maccms10"
 		},
 		{
-			"name": "富二代资源站",
-			"url": "http://f2dcj6.com/sapi",
-			"type": "xml",
-			"tag": "maccms10"
-		},
-		{
-			"name": "字幕网资源站",
-			"url": "http://zcyydy.com/sapi",
-			"type": "xml",
-			"tag": "maccms10"
-		},
-		{
-			"name": "久草资源站",
-			"url": "http://ssyydy.com/sapi",
-			"type": "xml",
-			"tag": "maccms10"
-		},
-		{
-			"name": "女优资源站",
-			"url": "http://nygcj.com/sapi.php",
-			"type": "xml",
-			"tag": "maccms10"
-		},
-		{
 			"name": "利来资源站",
 			"url": "http://llzxcj.com/inc/sck.php",
 			"type": "xml",
