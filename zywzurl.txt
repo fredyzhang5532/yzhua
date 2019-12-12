@@ -1,52 +1,57 @@
 {
-	"data":[
-	{
-	"type":"json",
-	"name":"小黄瓜",
-	"url":"http://cj.xhgcjym.com/inc/feifei3/?",
-	"haslist":1
-	},
-	{
-	"type":"json",
-	"name":"色色",
-	"url":"http://sscj8.com/inc/jsonsapi.php?",
-	"haslist":0
-	},
-	{
-	"type":"json",
-	"name":"撸死你",
-	"url":"http://lsnzxcj.com/inc/jsonsapi.php?",
-	"haslist":0
-	},
-	{
-	"type":"json",
-	"name":"博天堂",
-	"url":"http://bttcj.com/inc/jsonsapi.php?",
-	"haslist":0
-	},
-	{
-	"type":"json",
-	"name":"环亚",
-	"url":"http://wmcj8.com/inc/jsonsapi.php?",
-	"haslist":0
-	},
-	{
-	"type":"json",
-	"name":"利来",
-	"url":"http://llzxcj.com/inc/json.php?",
-	"haslist":0
-	},
-	{
-	"type":"json",
-	"name":"字幕网",
-	"url":"http://zcyydy.com/sapi/json?",
-	"haslist":0
-	},
-	{
-	"type":"json",
-	"name":"富二代",
-	"url":"http://f2dcj6.com/sapi/json?",
-	"haslist":0
-	}
+	"data": [{
+			"name": "色色资源站",
+			"url": "http://sscj8.com/inc/sapi.php",
+			"type": "xml",
+			"tag": "maccms10"
+		},
+		{
+			"name": "撸死你资源站",
+			"url": "http://lsnzxcj.com/inc/sapi.php",
+			"type": "xml",
+			"tag": "maccms10"
+		},
+		{
+			"name": "富二代资源站",
+			"url": "http://f2dcj6.com/sapi",
+			"type": "xml",
+			"tag": "maccms10"
+		},
+		{
+			"name": "字幕网资源站",
+			"url": "http://zcyydy.com/sapi",
+			"type": "xml",
+			"tag": "maccms10"
+		},
+		{
+			"name": "久草资源站",
+			"url": "http://ssyydy.com/sapi",
+			"type": "xml",
+			"tag": "maccms10"
+		},
+		{
+			"name": "女优资源站",
+			"url": "http://nygcj.com/sapi.php",
+			"type": "xml",
+			"tag": "maccms10"
+		},
+		{
+			"name": "利来资源站",
+			"url": "http://llzxcj.com/inc/sck.php",
+			"type": "xml",
+			"tag": "maccms10"
+		},
+		{
+			"name": "博天堂资源站",
+			"url": "http://bttcj.com/inc/sapi.php",
+			"type": "xml",
+			"tag": "maccms10"
+		},
+		{
+			"name": "环亚资源站",
+			"url": "http://wmcj8.com/inc/sapi.php",
+			"type": "xml",
+			"tag": "maccms10"
+		}
 	]
 }
