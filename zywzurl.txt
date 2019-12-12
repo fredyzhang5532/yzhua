@@ -6,6 +6,12 @@
 			"tag": "maccms10"
 		},
 		{
+			"name": "小黄瓜资源站",
+			"url": "http://cj.xhgcjym.com/inc/feifei3",
+			"type": "json",
+			"tag": "feifei"
+		},
+		{
 			"name": "撸死你资源站",
 			"url": "http://lsnzxcj.com/inc/sapi.php",
 			"type": "xml",
