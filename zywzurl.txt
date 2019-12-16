@@ -14,8 +14,8 @@
 		{
 			"name": "富二代资源站",
 			"url": "http://f2dcj6.com/sapi",
-			"type": "json",
-			"tag": "feifei"
+			"type": "xml",
+			"tag": "maccms10"
 		},
 		{
 			"name": "撸死你资源站",
