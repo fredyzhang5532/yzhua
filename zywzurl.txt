@@ -12,6 +12,12 @@
 			"tag": "feifei"
 		},
 		{
+			"name": "富二代资源站",
+			"url": "http://f2dcj6.com/sapi",
+			"type": "json",
+			"tag": "feifei"
+		},
+		{
 			"name": "撸死你资源站",
 			"url": "http://lsnzxcj.com/inc/sapi.php",
 			"type": "xml",
