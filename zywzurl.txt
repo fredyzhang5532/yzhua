@@ -18,6 +18,24 @@
 			"tag": "maccms10"
 		},
 		{
+			"name": "狼少年资源站",
+			"url": "http://cjmygzy.com/inc/sapi.php",
+			"type": "xml",
+			"tag": "maccms10"
+		},
+		{
+			"name": "玖玖资源站",
+			"url": "http://99zywcj.com/inc/sck.php",
+			"type": "xml",
+			"tag": "maccms10"
+		},
+		{
+			"name": "JAV名优资源站",
+			"url": "http://mygzycj.com/sapi.php",
+			"type": "xml",
+			"tag": "maccms10"
+		},
+		{
 			"name": "撸死你资源站",
 			"url": "http://lsnzxcj.com/inc/sapi.php",
 			"type": "xml",
