@@ -1,1 +1,86 @@
-dm1lc3M6Ly9leUpoWkdRaU9pSjRkV2t1ZVhwb2RXRXVZMjRpTENKaGFXUWlPaUl3SWl3aWFXUWlPaUprTm1Wa01qRmhaUzAyTUdRM0xUUXpOREF0WXpFeVlTMDJZV05tWWprNU9URmtNR0lpTENKdVpYUWlPaUowWTNBaUxDSndiM0owSWpvaU16a3lOamtpTENKd2N5STZJak01TWpZNUxYWnRaWE56TFhSamNDSXNJblJzY3lJNklpSXNJblI1Y0dVaU9pSnViMjVsSWl3aWRpSTZJaklpZlFvPQp2bGVzczovLzM0OTM5MWVlLWE4ZWMtNGI3Yi1mYzBiLWIyZDBhYTQwODhlNUB4dWkueXpodWEuY246NDk1MzE/dHlwZT10Y3Amc2VjdXJpdHk9ZmFsc2UjNDk1MzEtdmxlc3MtdGNwCg==
+port: 7890
+allow-lan: true
+mode: rule
+log-level: info
+unified-delay: true
+global-client-fingerprint: chrome
+dns:
+  enable: true
+  listen: :53
+  ipv6: true
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  default-nameserver: 
+    - 223.5.5.5
+    - 8.8.8.8
+  nameserver:
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
+  fallback:
+    - https://1.0.0.1/dns-query
+    - tls://dns.google
+  fallback-filter:
+    geoip: true
+    geoip-code: CN
+    ipcidr:
+      - 240.0.0.0/4
+
+proxies:
+
+
+- name: 49531-vless-tcp                         
+  type: vless
+  server: xui.yzhua.cn                       
+  port: 49531                                     
+  uuid: 349391ee-a8ec-4b7b-fc0b-b2d0aa4088e5     
+  udp: true
+  tls: false
+
+
+- name: 39269-vmess-tcp                         
+  type: vmess
+  server: xui.yzhua.cn                        
+  port: 39269                                     
+  uuid: d6ed21ae-60d7-4340-c12a-6acfb9991d0b       
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+
+
+proxy-groups:
+- name: 负载均衡
+  type: load-balance
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  strategy: round-robin
+  proxies: 
+
+    - 39269-vmess-tcp
+    - 49531-vless-tcp
+
+
+- name: 自动选择
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  tolerance: 50
+  proxies:  
+
+    - 39269-vmess-tcp
+    - 49531-vless-tcp
+    
+- name: 🌍选择代理节点
+  type: select
+  proxies:
+    - 负载均衡                                         
+    - 自动选择
+    - DIRECT
+
+    - 39269-vmess-tcp
+    - 49531-vless-tcp
+
+rules:
+  - GEOIP,LAN,DIRECT
+  - GEOIP,CN,DIRECT
+  - MATCH,🌍选择代理节点
